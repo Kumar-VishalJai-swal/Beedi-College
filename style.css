@@ -1,0 +1,955 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    position: relative;
+}
+.navbar{
+    width: 100vw;
+    height: 7.5rem;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 100;
+}
+.logo-group{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 3rem;
+     */
+}
+.logo{
+    width: 7rem;
+    height: 7rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.college-name{
+    width: 11rem;
+    line-height: 0;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: -0.3rem;
+}
+.college-name .logo-name{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font: bolder;
+    font-weight: 500;
+    color: #3256a8;
+    
+}
+.college-name p{
+    margin-top: -9px;
+    font-family: "Nanum Myeongjo", serif;
+}
+.establish-date{
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color: #3256a8;
+    margin-left: 0.2rem;
+    
+}
+.nav-icoon-bars{
+    display: none;
+}
+.navs-container{
+    display: flex;
+    flex-direction: column;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3256a8;
+    width: 72.3vw;
+    height: 2.5rem;
+    padding-left: .5rem;
+    margin-left: 3.5rem;
+    border-bottom-left-radius: 15px;
+}
+.nav1-links{
+    display: flex;
+    gap: 2rem;
+}
+.College-news{
+    background-color: #0a42c4;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -0.5rem;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.nav1-p{
+    margin-top: 1.7rem;
+    cursor: pointer;
+}
+.nav1-links p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+}
+.search-icon{
+    color: white;
+    margin-right: 3rem;
+}
+#caret-right-btn{
+    rotate: 90deg;
+    margin-left: 0.3rem;
+    font-size: 10px;
+}
+
+.nav2{
+    width: 72vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around;
+    gap: 2rem; */
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    
+}
+.academics{
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.1s ease-in;
+    margin-left: 2rem;
+}
+#academics:hover{
+ border-bottom: 2px solid #3256a8;
+ border-radius: 5px
+}
+
+.academics a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font: bolder;
+    letter-spacing: 1.2px;
+}
+#apply-btn{
+    line-height: 0.1;
+    background-color: #3256a8;
+    border-radius: 40px;
+    width: 8rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#apply-btn a{
+    color: white;
+    font-size: 0.85rem;
+}
+.profile-notification{
+    display: flex;
+    align-items: center;
+    
+    
+}
+#profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+    background-position: center;
+    
+}
+#profile img{
+    width: 100%;
+    
+}
+#notification{
+    width: 1em;
+    font-size: 1.4rem;
+    opacity: 0.7;
+    
+}
+.slider{
+    width: 100vw;
+    height: 768px;
+    
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    
+}
+.slider-text{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    
+}
+.slider-text h1{
+    color: white;
+    font-size: 145px;
+    letter-spacing: 0.1px;
+    font-weight: 800;
+}
+.slider-text p{
+    color: white;
+    font-size: 55px;
+    letter-spacing: 4.5px;
+    font-weight: 700;
+    font: bolder;
+    margin-top: -8rem;
+}
+.slider-btns{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+.slider-btns .btn{
+    background-color: #3256a8;
+    padding: 1.3rem 3rem;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.slider-btns .btn:hover{
+    background-color: #0a42c4;
+}
+.slider-btns .btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+#slider-btns-mb{
+    display: none;
+    
+}
+
+.chat{
+    position: fixed;
+    bottom: 4rem;
+    left: 3rem;
+    width: 230px;
+    height: 190px;
+    background-color: #3c64c2;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    
+}
+.chat i{
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.chat h2{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+}
+.chat .acount-dp{
+    width: 55%;
+    height: 4rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    position: relative;
+}
+.chat .acount-dp .img{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    border-radius: 50%;
+   position: absolute;
+   border: 1px solid yellow;
+   cursor: pointer;
+}
+.chat .acount-dp .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat .acount-dp .img2{
+    margin-left: 2.5rem;
+    background-color: rgb(255, 0, 200);
+}
+.chat .acount-dp .img3{
+    margin-left: 5rem;
+    background-color: green;
+}
+.chat .chat-btn{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-image: linear-gradient(65deg, rgb(91, 91, 252), rgb(136, 107, 179),rgb(70, 70, 130));
+    border: none;
+    box-shadow: 0px 0px 15px #7f9cf5;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.empower{
+    
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/343/586/original/blue-gradient-background-with-curved-elements-used-for-banner-poster-and-website-design-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 7rem;
+    margin-top: -1rem;
+}
+.empower h2{
+    font-size: 2.5rem;
+    color: rgb(245, 245, 69);
+}
+.empower p{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.our-program{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.our-program h2{
+    font-size: 2rem;
+    color: #0a42c4;
+    font-weight: 700;
+}
+.line{
+    width: 8rem;
+    height: 4px;
+    background-color: yellow;
+    border-radius: 70px;
+    margin-top: -0.6rem;
+}
+.boxes{
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.box{
+    width: 280px;
+    height: 480px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px black;
+}
+.box:hover{
+    box-shadow: 0px 0px 10px black;
+    margin-top: -0.1rem;
+}
+.box .image{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-bottom: 5px solid #0a42c4;
+}
+.box .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.programs-data{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.programs-data h3{
+    color: #0a42c4;
+    margin-top: 2rem;
+}
+.programs-data p{
+    font-weight: 400;
+    opacity: 0.8;
+    color: rgb(75, 70, 70);
+    font-size: 1.08rem;
+}
+.programs-data .btn{
+    width: 7.5rem;
+    height: 2.8rem;
+    background-color: #3256a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: #0a42c4;
+}
+.programs-data .btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.dotted-line{
+    width: 0rem;
+    height: 6rem;
+    margin: auto;
+    border-left: 7px dotted yellow;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.choose-us{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.why-choose{
+   margin-right: 2rem;
+
+}
+.why-choose h2{
+    color: blue;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.why-choose p{
+    color: rgb(66, 65, 65);
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+.student-feedback{
+    background-color: blue;
+    width: 100%;
+    height: 590px;
+    display: flex;
+}
+.yellow-qu{
+    width: 5rem;
+    position: absolute;
+    left: 6.5rem;
+    margin-top: 3.5rem;
+    z-index: 1;
+}
+.student-feed-img{
+    width: 550px;
+    height: 395px;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 6rem;
+    margin-left: 8rem;
+}
+.student-feedback-paragraph{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    position: absolute;
+    right: 9rem;
+    margin-top: 10rem;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+}
+.student-feedback-paragraph p{
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+    letter-spacing: 1px;
+}
+.quote-close{
+    font-size: 5rem;
+    color: yellow;
+    position: absolute;
+    right: 7rem;
+    z-index: 1;
+    margin-top: 30.5rem;
+}
+.where-all-belongs{
+    background-image: url("./image/studens-bg.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-top: -1.5rem;
+}
+.belongs-para{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.85;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.belongs-para h2{
+    font-size: 2rem;
+    color: #0a42c4;
+}
+.belongs-para p{
+    width: 60%;
+    font-size: 1.5rem;
+    font-family: "Source Code Pro", monospace;
+    font-style: italic;
+    margin-top: 3rem;
+}
+.belongs-para .btns{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.belongs-para .btns .btn{
+    border: 3px solid #0a42c4;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px #3256a8;
+}
+.belongs-para .btns .btn:hover{
+    border: 3px solid white;
+    background-color: #0a42c4;
+    
+}
+.belongs-para .btns .btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* media query */
+@media (max-width: 430px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100vw;
+        height: 5rem;
+        padding-left: 0.7rem;
+        padding-right: 0px;
+        position: fixed;
+        
+    }
+    .logo{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .college-name{
+        width: 7.5rem;
+        line-height: 0;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: -0.5rem;
+        
+    }
+    .college-name .logo-name{
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        font: bolder;
+        font-weight: 500;
+        color: #3256a8;
+        
+    }
+   
+   
+    .college-name p{
+        margin-top: -2px;
+        
+        font-family: "Nanum Myeongjo", serif;
+    }
+    .establish-date{
+        letter-spacing: 2px;
+        font-size: 0.5rem;
+        color: #3256a8;
+        margin-left: 0.2rem;
+        
+    }
+    .navs-container{
+        display: none;
+        
+    }
+    .nav-icoon-bars{
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        position: absolute;
+        right: 1.5rem;
+        
+    }
+    .nav-icoon-bars i{
+        font-size: 1.8rem;
+        color: #0a42c4;
+    }
+    .nav-icoon-bars p{
+        font-size: 1.2rem;
+        color: #0a42c4;
+    }
+
+    
+    .slider{
+        width: 100vw;
+        height: 360px;
+        
+    }
+    .slider-text{
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        
+    }
+    .slider-text h1{
+        color: white;
+        font-size: 55px;
+        letter-spacing: 0.4px;
+        font-weight: 800;
+    }
+    .slider-text p{
+        color: white;
+        font-size: 23px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font: bolder;
+        margin-top: -3.5rem;
+    }
+    .slider-btns{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 8rem;
+    }
+    
+    #slider-btns-mb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+       margin-bottom: 3rem;
+       margin-top: -2rem;
+    }
+    #slider-btns-mb .btn{
+        background-color: #3256a8;
+        padding: 1rem 4rem;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    #slider-btns-mb .btn a{
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+    }
+    
+.chat{
+    position: fixed;
+    bottom: 2rem;
+    left: 1.5rem;
+    width: 180px;
+    height: 80px;
+    background-color: #3c64c2;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+    
+}
+.chat i{
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+.chat h2{
+    display: none;
+}
+.chat .acount-dp{
+    width: 40%;
+    height: 4rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    position: relative;
+}
+
+.chat .acount-dp .img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+   position: absolute;
+   border: 1px solid yellow;
+   cursor: pointer;
+   
+}
+.chat .acount-dp .img1{
+    display: none;
+}
+.chat .acount-dp .img2{
+    display: none;
+}
+.chat .acount-dp .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat .acount-dp .img3{
+    margin-left: 0.5rem;
+    background-color: green;
+}
+.chat .chat-btn{
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-image: linear-gradient(65deg, rgb(91, 91, 252), rgb(136, 107, 179),rgb(70, 70, 130));
+    border: none;
+    box-shadow: 0px 0px 15px #7f9cf5;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.empower{
+    
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/343/586/original/blue-gradient-background-with-curved-elements-used-for-banner-poster-and-website-design-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1.3rem;
+    text-align: center;
+}
+.empower h2{
+    font-size: 1.5rem;
+    color: rgb(241, 254, 0);
+}
+.empower p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    margin-top: -0.2rem;
+}
+
+
+.our-program h2{
+    font-size: 1.5rem;
+    
+}
+.line{
+    width: 5rem;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.box{
+    width: 90%;
+    height: 480px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 1px black;
+}
+
+
+.choose-us{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+   
+}
+.why-choose{
+   margin-right: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+}
+
+.why-choose p{
+    color: rgb(66, 65, 65);
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+.student-feedback{
+    background-color: blue;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.yellow-qu{
+    width: 3.5rem;
+    position: absolute;
+    left: 1rem;
+    margin-top: 1rem;
+    z-index: 1;
+}
+.student-feed-img{
+    width: 90%;
+    height: 245px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    margin-top: 2.5rem;
+    margin-left: 0rem;
+}
+.student-feedback-paragraph{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 0rem;
+    position: relative;
+    right: 0rem;
+    margin-top: -0.1rem;
+    text-align: center;
+    box-shadow: none;
+}
+.student-feedback-paragraph p{
+    font-size: 1.25rem;
+    color: rgb(70, 70, 70);
+    letter-spacing: 1px;
+    padding: 0 1.5rem ;
+}
+.quote-close{
+    font-size: 4rem;
+    color: #3256a8;
+    position: relative;
+    right:-11rem;
+    z-index: 1;
+    margin-top: -1.5rem;
+}
+.where-all-belongs{
+    background-image: url("./image/studens-bg.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-top: -1.5rem;
+    
+}
+.belongs-para{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.85;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.belongs-para h2{
+    font-size: 1.7rem;
+    color: #0a42c4;
+    position: relative;
+    margin-top: 1rem;
+}
+.belongs-para p{
+    width: 92%;
+    font-size: 1.2rem;
+    font-family: "Source Code Pro", monospace;
+    font-style: italic;
+    margin-top: 0rem;
+}
+.belongs-para .btns{
+    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+.belongs-para .btns .btn{
+    border: 3px solid #0a42c4;
+    padding: 1.3rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px #3256a8;
+}
+.belongs-para .btns .btn:hover{
+    border: 3px solid white;
+    background-color: #0a42c4;
+    
+}
+.belongs-para .btns .btn a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+}
+
+
+
+
+    
+}
+
