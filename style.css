@@ -701,9 +701,11 @@ footer .logo-img img{
     color: white;
 }
 
+,test{
+    display: none;
+}
 
-
-/* media query */
+/* media query for mobile user*/
 @media (max-width: 430px) {
     body{
         overflow-x: hidden;
@@ -1136,6 +1138,7 @@ footer .logo-img img{
     background-color: #004cff62;
     margin-top: -0.3rem;
 }
+
 .footer-section footer{
     background-color: #3256a8;
     width: 100%;
