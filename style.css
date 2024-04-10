@@ -435,9 +435,9 @@ body::-webkit-scrollbar{
 }
 .dotted-line{
     width: 0rem;
-    height: 6rem;
+    height: 5rem;
     margin: auto;
-    border-left: 7px dotted yellow;
+    border-left: 5px dotted yellow;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -563,6 +563,143 @@ body::-webkit-scrollbar{
     color: black;
 }
 
+.whats-next{
+    background-color: white;
+    text-align: center;
+
+}
+.whats-next h2{
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: #0a42c4;
+    margin-top: -2rem;
+}
+.whats-next .next-btns{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.whats-next .next-btns .btn{
+    padding: 0.2rem 2rem;
+    background-color: #0a42c4;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.whats-next .next-btns .btn p{
+    color: white;
+    font-weight: 600;
+}
+#next-btn{
+    background-color: rgb(255, 205, 5);
+}
+.next-img{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.next-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section{
+    width: 100%;
+    height: 350px;
+    background-color: #004cff62;
+}
+.footer-section footer{
+    background-color: #3256a8;
+    width: 100%;
+    height: 86.5%;
+    position: relative;
+    bottom: -1rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer .logo-img{
+    width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: -1rem;
+}
+footer .logo-img img{
+    width: 100%;
+   
+}
+.address-info{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.address-info a{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.address-info a:hover{
+    color: white;
+}
+ .address{
+    font-weight: 600;
+}
+.employment-info{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.employment-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+   
+}
+.employment-info a:hover{
+    color: white;
+}
+.others-info{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.others-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+.others-info a:hover{
+    color: white;
+}
+.main-footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #0a42c4;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.main-footer p{
+    color: white;
+}
+.main-footer i{
+    color: white;
+}
 
 
 
@@ -623,14 +760,15 @@ body::-webkit-scrollbar{
         gap: 0.3rem;
         position: absolute;
         right: 1.5rem;
+        margin-top: 0.5rem;
         
     }
     .nav-icoon-bars i{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: #0a42c4;
     }
     .nav-icoon-bars p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #0a42c4;
     }
 
@@ -890,7 +1028,7 @@ body::-webkit-scrollbar{
     background-image: url("./image/studens-bg.jpg");
     background-size: 200%;
     width: 100%;
-    height: 700px;
+    height: 570px;
     object-fit: cover;
     background-repeat: no-repeat;
     margin-top: -1.5rem;
@@ -944,6 +1082,154 @@ body::-webkit-scrollbar{
     text-decoration: none;
     font-size: 1.1rem;
     color: black;
+}
+
+
+.whats-next{
+    margin-top: -2rem;
+    background-color: white;
+    text-align: center;
+
+}
+.whats-next h2{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0a42c4;
+    margin-top: -2rem;
+}
+.whats-next .next-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.whats-next .next-btns .btn{
+    padding: 0.2rem 5rem;
+    background-color: #0a42c4;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.whats-next .next-btns .btn p{
+    color: white;
+    font-weight: 600;
+}
+#next-btn{
+    background-color: rgb(255, 205, 5);
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.next-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.next-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    background-color: #004cff62;
+    margin-top: -0.3rem;
+}
+.footer-section footer{
+    background-color: #3256a8;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: -1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+footer .logo-img{
+    width: 150px;
+    height: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: -1rem;
+    margin-left: 1.5rem;
+}
+footer .logo-img img{
+    width: 100%;
+   
+}
+.address-info{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.address-info a{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.address-info a:hover{
+    color: white;
+}
+ #address{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.employment-info{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.employment-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+   
+}
+.employment-info a:hover{
+    color: white;
+}
+.others-info{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.others-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+.others-info a:hover{
+    color: white;
+}
+.main-footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #0a42c4;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.main-footer p{
+    color: white;
+}
+.main-footer i{
+    color: white;
 }
 
 
