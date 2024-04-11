@@ -626,6 +626,7 @@ footer .logo-img{
     background-color: white;
     position: relative;
     top: -1rem;
+    overflow: hidden;
 }
 footer .logo-img img{
     width: 100%;
@@ -705,6 +706,12 @@ footer .logo-img img{
     display: none;
 }
 #nav-close{
+    display: none;
+}
+.nav-resp{
+    display: none;
+}
+.nav-icoon-bars{
     display: none;
 }
 
