@@ -701,18 +701,25 @@ footer .logo-img img{
     color: white;
 }
 
-,test{
+.test{
+    display: none;
+}
+#nav-close{
     display: none;
 }
 
 /* media query for mobile user*/
-@media (max-width: 430px) {
+@media (max-width: 590px) {
     body{
         overflow-x: hidden;
+        
+    }
+    .main-container::-webkit-scrollbar{
+        display: none;
     }
     .navbar{
         width: 100vw;
-        height: 5rem;
+        height: 4rem;
         padding-left: 0.7rem;
         padding-right: 0px;
         position: fixed;
@@ -752,6 +759,10 @@ footer .logo-img img{
         margin-left: 0.2rem;
         
     }
+    #nav-close{
+        font-size: 1.3rem;
+    }
+   
     .navs-container{
         display: none;
         
@@ -762,19 +773,147 @@ footer .logo-img img{
         gap: 0.3rem;
         position: absolute;
         right: 1.5rem;
-        margin-top: 0.5rem;
-        
+        margin-top: 0.4rem;
+        cursor: pointer;
     }
     .nav-icoon-bars i{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: #0a42c4;
+        z-index: 110;
     }
     .nav-icoon-bars p{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         color: #0a42c4;
     }
-
+    #nav-icon-close{
+        display: none;
+    }
     
+
+    .nav-resp{
+        width: 100vw;
+        height: 100vh;
+        background-color: #3256a8;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: none;
+    }
+    .nav-resp::-webkit-scrollbar{
+        display: none;
+    }
+    .navs-mobile{
+        width: 100vw;
+        height: 100vh;
+        background-color: #3256a8;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        margin-top: -1.1rem;
+        border-top: 2px solid #3c64c2;
+        margin-bottom: 4rem;
+    }
+    .navs-mobile .academics{
+        width: 100%;
+        height: 3.5rem;
+        cursor: pointer;
+        display: flex;
+        
+        text-align: center;
+        transition: all 0.1s ease-in;
+        margin-left: 0rem;
+        border-bottom: 1px solid #3c64c2;
+    }
+    .navs-mobile #academics:hover{
+    border-top: 2px solid #0a42c4;
+    border-bottom: 2px solid #0a42c4;
+    box-shadow: 0px 0px 20px #0a42c4;
+    }
+    .navs-mobile .academics a{
+        color: white;
+    }
+ 
+    
+.profile-notification{
+    display: flex;
+    align-items: center;
+    margin-top: 5.5rem;
+    border-bottom: 1px solid #5f8fff;
+    width: 100%;
+    
+}
+#profile{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #3c64c2;
+    box-shadow: 0px 0px 15px #3c64c2;
+    background-position: center;
+    object-fit: cover;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+#profile img{
+    width: 100%;
+    
+}
+.profile-details-mb{
+    margin-left: 1rem;
+    line-height: 3px;
+    color: rgba(255, 255, 255, 0.935);
+    margin-bottom: 2rem;
+}
+.profile-details-mb p span{
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+.year-sem{
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+    color: #ffffffd8;
+}
+
+.nav-resp .nav1-links{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-left: 1rem;
+
+}
+    .College-news{
+      background-color: transparent;
+      width: 100%;
+      height: 2.5rem;
+      border-bottom: 1px solid #5f8fff33;
+      border-radius: 0px;
+      transition: all 0.1s ease-in;
+      display: flex;
+      align-items: center;
+    }
+    .College-news:hover{
+        box-shadow: 0px 0px 15px #2059dd;
+    }
+    .nav-resp .nav1-p{
+        background-color: transparent;
+      width: 100%;
+      height: 2.5rem;
+      padding-left: 0.5rem;
+      border-bottom: 1px solid #5f8fff33;
+      border-radius: 0px;
+      margin-top: -0.2rem;
+      display: flex;
+      align-items: center;
+      transition: all 0.1s ease-in;
+    }
+    .nav-resp .nav1-p:hover{
+        box-shadow: 0px 0px 15px #1b58e6;
+    }
+    .nav-resp .nav1-p a{
+        font-size: 0.8rem;
+    }
+
     .slider{
         width: 100vw;
         height: 360px;

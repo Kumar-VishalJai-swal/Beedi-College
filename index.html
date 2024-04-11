@@ -11,7 +11,7 @@
     <title>Beedi College</title>
 </head>
 <body>
-    <div class="main-container">
+    <div id="main-container" class="main-container">
         <section class="navbar">
             <div class="logo-group">
                 <div class="logo">
@@ -23,9 +23,14 @@
                     <p class="establish-date">ESTABLISHED 2015</p>
                 </div>
             </div>
-            <div class="nav-icoon-bars">
-                <i class="fa-solid fa-bars"></i>
-                <p>MENU</p>
+            <div id="nav-icon-line" class="nav-icoon-bars">
+                <i id="three-line" class="fa-solid fa-bars"></i>
+                <p class="menu">MENU</p>
+                
+            </div>
+            <div id="nav-icon-close" class="nav-icoon-bars">
+                <i class="fa-solid fa-xmark"></i>
+                <p>CLOSE</p>
             </div>
             <div class="navs-container">
                 <div class="top-nav">
@@ -82,6 +87,62 @@
                 </div>
             </div>
         </section>
+
+
+        <section id="nav-resp" class="nav-resp">
+            <div class="profile-notification">
+                
+                <div id="profile" class="academics ">
+                    <img src="./image/member-vishal.jpeg" alt="">
+                </div>
+
+                <div class="profile-details-mb">
+                    <p class="name">Vishal Kumar <span>(student)</span></p>
+                    <p class="year-sem">BCA - 1st year</p>
+                </div>
+                
+            </div>
+
+            <div class="nav1-links">
+                <p  class="College-news"><a href="#">COLLEGE NEWS <i id="caret-right-btn" class="fa-solid fa-caret-right"></i></a></p>
+                <p class="nav1-p"><a href="#">CODING CLUB</a></p>
+                <p class="nav1-p"><a href="#">VISIT</a></p>
+                <p class="nav1-p"><a href="#">EVENTS</a></p>
+                <p class="nav1-p"><a href="#">GIVE</a></p>
+            </div>
+
+            <div class="navs-mobile">
+                
+                <div id="academics" class="academics">
+                    <a href="#">ACADEMICS & ADMISSION</a>
+                    
+                </div>
+                
+                <div id="academics" class="academics">
+                    <a href="#">ABOUT US</a>
+                    
+                </div>
+                
+
+                <div id="academics" class="academics">
+                    <a href="#">STUDENTS RESOURCES</a>
+                   
+                </div>
+
+                <div id="academics" class="academics">
+                    <a href="#">ABILITES</a>
+                    
+                </div>
+                
+
+                <div id="academics" class="academics ">
+                    <a href="#">CONTACT US</a>
+
+                </div>
+            </div>
+        </section>
+
+
         <section class="slider">
             <video class="video" autoplay loop muted  src="./collegevideo.mp4" ></video>
             <div class="slider-text">
@@ -286,5 +347,7 @@
         </section>
         
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
