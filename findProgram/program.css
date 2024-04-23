@@ -1,0 +1,1362 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    position: relative;
+}
+.navbar{
+    width: 100vw;
+    height: 7.5rem;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 100;
+    box-shadow: 0px 0px 15px black;
+}
+.logo-group{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 3rem;
+     */
+}
+.logo{
+    width: 7rem;
+    height: 7rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.college-name{
+    width: 11rem;
+    line-height: 0;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: -0.3rem;
+}
+.college-name .logo-name{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font: bolder;
+    font-weight: 500;
+    color: #3256a8;
+    
+}
+.college-name p{
+    margin-top: -9px;
+    font-family: "Nanum Myeongjo", serif;
+}
+.establish-date{
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color: #3256a8;
+    margin-left: 0.2rem;
+    
+}
+.nav-icoon-bars{
+    display: none;
+}
+.navs-container{
+    display: flex;
+    flex-direction: column;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3256a8;
+    width: 72.3vw;
+    height: 2.5rem;
+    padding-left: .5rem;
+    margin-left: 3.5rem;
+    border-bottom-left-radius: 15px;
+}
+.nav1-links{
+    display: flex;
+    gap: 2rem;
+}
+.College-news{
+    background-color: #0a42c4;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -0.5rem;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.nav1-p{
+    margin-top: 1.7rem;
+    cursor: pointer;
+}
+.nav1-links p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+}
+.search-icon{
+    color: white;
+    margin-right: 3rem;
+}
+#caret-right-btn{
+    rotate: 90deg;
+    margin-left: 0.3rem;
+    font-size: 10px;
+}
+
+.nav2{
+    width: 72vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around;
+    gap: 2rem; */
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    
+}
+.academics{
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.1s ease-in;
+    margin-left: 2rem;
+}
+#academics:hover{
+ border-bottom: 2px solid #3256a8;
+ border-radius: 5px
+}
+
+.academics a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font: bolder;
+    letter-spacing: 1.2px;
+}
+#apply-btn{
+    line-height: 0.1;
+    background-color: #3256a8;
+    border-radius: 40px;
+    width: 8rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#apply-btn a{
+    color: white;
+    font-size: 0.85rem;
+}
+.profile-notification{
+    display: flex;
+    align-items: center;
+    
+    
+}
+#profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+    background-position: center;
+    
+}
+#profile img{
+    width: 100%;
+    
+}
+#notification{
+    width: 1em;
+    font-size: 1.4rem;
+    opacity: 0.7;
+    
+}
+
+
+.chat{
+    position: fixed;
+    bottom: 4rem;
+    left: 3rem;
+    width: 230px;
+    height: 190px;
+    background-color: #3c64c2;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    
+}
+.chat i{
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.chat h2{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+}
+.chat .acount-dp{
+    width: 55%;
+    height: 4rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    position: relative;
+}
+.chat .acount-dp .img{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    border-radius: 50%;
+   position: absolute;
+   border: 1px solid yellow;
+   cursor: pointer;
+}
+.chat .acount-dp .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat .acount-dp .img2{
+    margin-left: 2.5rem;
+    background-color: rgb(255, 0, 200);
+}
+.chat .acount-dp .img3{
+    margin-left: 5rem;
+    background-color: green;
+}
+.chat .chat-btn{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-image: linear-gradient(65deg, rgb(91, 91, 252), rgb(136, 107, 179),rgb(70, 70, 130));
+    border: none;
+    box-shadow: 0px 0px 15px #7f9cf5;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+.chat .chat-btn a{
+    text-decoration: none;
+    color: white;
+}
+.program{
+    margin-top: -5rem;
+}
+/* .program-slider{
+    background-image: url("/image/program-slider.jpg");
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    
+    position: relative;
+    top: 0;
+} */
+.program-slider img{
+    width: 100%;
+    height: 715px;
+    filter: brightness(20%);
+    position: relative;
+}
+.slider-text{
+    position: absolute;
+    top: 10%;
+}
+.line{
+    width: 8rem;
+    height: 4px;
+    background-color: yellow;
+    border-radius: 70px;
+    margin: auto;
+    margin-top: -2rem;
+}
+
+
+h1{
+    color: #fff;
+    margin-top: 11rem;
+    text-align: center;
+    font-size: 3.9rem;
+    font-weight: 800;
+}
+.major-program-para{
+    text-align: center;
+    font-size: 1.35rem;
+   font-family:'Times New Roman', Times, serif;
+    padding: 0 20rem;
+    color: rgba(255, 255, 255, 0.464);
+}
+.course-search{
+    display: flex;
+    justify-content: start;
+    margin: 5rem 20rem;
+    border: 1px solid #3c64c29f;
+    height: 2.8rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.638);
+    box-shadow: 0px 0px 0.5rem black;
+}
+.course-search input{
+    width: 85%;
+    height: 95%;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.638);
+    cursor: pointer;
+    color: rgb(0, 21, 255);
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.course-search input::-webkit-input-placeholder{
+    color: #3256a8;
+    font-size: 1rem;
+
+}
+
+.course-search button{
+    width: 15%;
+    border: none;
+    background-color: #0a42c4;
+    color: white;
+    height: 100%;
+    margin-left: 0.15rem;
+    cursor: pointer;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+    
+    
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+    border-radius: 1px;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.box{
+    width: 240px;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px black;
+}
+.box:hover{
+    box-shadow: 0px 0px 10px black;
+    margin-top: -0.1rem;
+}
+.box .image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 7px solid #0a42c4;
+}
+.box .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.programs-data{
+    padding-left: 0.5rem;
+   padding-right: 0.5rem;
+}
+.programs-data h3{
+    color: #0a42c4;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.programs-data p{
+    font-weight: 400;
+    opacity: 0.8;
+    color: rgb(75, 70, 70);
+    font-size: 0.7rem;
+    line-height: 1.5px;
+}
+.programs-data .btn{
+    width: 100%;
+    height: 2.8rem;
+    background-color: #3256a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    
+}
+.programs-data .btn a{
+   text-decoration: none;
+   color: white;
+}
+.btn:hover{
+    background-color: #0a42c4;
+}
+.programs-data .btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.dotted-line{
+    width: 0rem;
+    height: 5rem;
+    margin: auto;
+    border-left: 5px dotted yellow;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.whats-next{
+    background-color: white;
+    text-align: center;
+
+}
+.whats-next h2{
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: #0a42c4;
+    margin-top: -2rem;
+}
+.whats-next .next-btns{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.whats-next .next-btns .btn{
+    padding: 0.2rem 2rem;
+    background-color: #0a42c4;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.whats-next .next-btns .btn p{
+    color: white;
+    font-weight: 600;
+}
+#next-btn{
+    background-color: rgb(255, 205, 5);
+}
+.next-img{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.next-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section{
+    width: 100%;
+    height: 350px;
+    background-color: #004cff62;
+}
+.footer-section footer{
+    background-color: #3256a8;
+    width: 100%;
+    height: 86.5%;
+    position: relative;
+    bottom: -1rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer .logo-img{
+    width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: -1rem;
+    overflow: hidden;
+}
+footer .logo-img img{
+    width: 100%;
+   
+}
+.address-info{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.address-info a{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.address-info a:hover{
+    color: white;
+}
+ .address{
+    font-weight: 600;
+}
+.employment-info{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.employment-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+   
+}
+.employment-info a:hover{
+    color: white;
+}
+.others-info{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.others-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+.others-info a:hover{
+    color: white;
+}
+.main-footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #0a42c4;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.main-footer p{
+    color: white;
+}
+.main-footer i{
+    color: white;
+}
+#nav-close{
+    display: none;
+}
+.nav-resp{
+    display: none;
+}
+.nav-icoon-bars{
+    display: none;
+}
+
+
+
+
+/* course.html */
+.course{
+    width: 100%;
+    
+}
+.course .course-slider-image img{
+    width: 100%;
+    height: 650px;
+    margin-top: 2rem;
+}
+.course .course-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course .course-about h1{
+    color: #0a42c4;
+    font-size: 3rem;
+}
+.course line{
+    margin-top: 1rem;
+}
+.course .course-about .course-about-para{
+    color: gray;
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.course .course-about .eligibility-subjects{
+    width: 80%;
+    display: flex;
+    margin-top: 4rem;
+    
+}
+.course .course-about .eligibility-subjects .eligibility{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(128, 128, 128, 0.301);
+    padding: 2rem 1.5rem;
+}
+.eligibility h3{
+    color: #3c64c2;
+    font-size: 1.3rem;
+}
+.eligibility ul{
+    margin-top: -0.2rem;
+}
+.eligibility ul li{
+    line-height: 1.5;
+    
+}
+.course .course-about .eligibility p{
+    text-align: start;
+    color: rgba(0, 0, 0, 0.778);
+    width: 85%;
+    margin-top: -0.2rem;
+
+    
+}
+.course .course-about .eligibility-subjects .subjects{
+   background-color: #7f9cf59b;
+   padding: 2.5rem 1.5rem;
+}
+.subjects h3{
+    color: #3c64c2;
+    font-size: 1.25rem;
+}
+.subjects ul li{
+    line-height: 2;
+}
+.require-document {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.require-document h2{
+   color: #3256a8;
+   margin-top: 3rem;
+}
+.require-document .line{
+    margin-top: -0.5rem;
+}
+.require-document .require{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.require-document .require .document h3{
+    color: #6086fa;
+    margin-left: 1rem;
+}
+.require-document .require .document  ul li{
+    line-height: 1.7;
+    color: rgb(100, 90, 90);
+}
+.document-btns button{
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a42c4;
+    color: white;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+#searchIcon{
+    display: none;
+}
+
+
+@media (max-width: 590px) {
+    body{
+        overflow-x: hidden;
+        
+    }
+    .main-container::-webkit-scrollbar{
+        display: none;
+    }
+    .navbar{
+        width: 100vw;
+        height: 4rem;
+        padding-left: 0.7rem;
+        padding-right: 0px;
+        position: fixed;
+        
+    }
+    .logo{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .college-name{
+        width: 7.5rem;
+        line-height: 0;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: -0.5rem;
+        
+    }
+    .college-name .logo-name{
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        font: bolder;
+        font-weight: 500;
+        color: #3256a8;
+        
+    }
+   
+   
+    .college-name p{
+        margin-top: -2px;
+        
+        font-family: "Nanum Myeongjo", serif;
+    }
+    .establish-date{
+        letter-spacing: 2px;
+        font-size: 0.5rem;
+        color: #3256a8;
+        margin-left: 0.2rem;
+        
+    }
+    #nav-close{
+        font-size: 1.3rem;
+    }
+   
+    .navs-container{
+        display: none;
+        
+    }
+    .nav-icoon-bars{
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        position: absolute;
+        right: 1.5rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+    }
+    .nav-icoon-bars i{
+        font-size: 1.2rem;
+        color: #0a42c4;
+        z-index: 110;
+    }
+    .nav-icoon-bars p{
+        font-size: 0.9rem;
+        color: #0a42c4;
+    }
+    #nav-icon-close{
+        display: none;
+    }
+    
+
+    .nav-resp{
+        width: 100vw;
+        height: 100vh;
+        background-color: #3256a8;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: none;
+    }
+    .nav-resp::-webkit-scrollbar{
+        display: none;
+    }
+    .navs-mobile{
+        width: 100vw;
+        height: 100vh;
+        background-color: #3256a8;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        margin-top: -1.1rem;
+        border-top: 2px solid #3c64c2;
+        margin-bottom: 4rem;
+    }
+    .navs-mobile .academics{
+        width: 100%;
+        height: 3.5rem;
+        cursor: pointer;
+        display: flex;
+        
+        text-align: center;
+        transition: all 0.1s ease-in;
+        margin-left: 0rem;
+        border-bottom: 1px solid #3c64c2;
+    }
+    .navs-mobile #academics:hover{
+    border-top: 2px solid #0a42c4;
+    border-bottom: 2px solid #0a42c4;
+    box-shadow: 0px 0px 20px #0a42c4;
+    }
+    .navs-mobile .academics a{
+        color: white;
+    }
+ 
+    
+.profile-notification{
+    display: flex;
+    align-items: center;
+    margin-top: 5.5rem;
+    border-bottom: 1px solid #5f8fff;
+    width: 100%;
+    
+}
+#profile{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #3c64c2;
+    box-shadow: 0px 0px 15px #3c64c2;
+    background-position: center;
+    object-fit: cover;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+#profile img{
+    width: 100%;
+    
+}
+.profile-details-mb{
+    margin-left: 1rem;
+    line-height: 3px;
+    color: rgba(255, 255, 255, 0.935);
+    margin-bottom: 2rem;
+}
+.profile-details-mb p span{
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+.year-sem{
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+    color: #ffffffd8;
+}
+
+.nav-resp .nav1-links{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-left: 1rem;
+
+}
+    .College-news{
+      background-color: transparent;
+      width: 100%;
+      height: 2.5rem;
+      border-bottom: 1px solid #5f8fff33;
+      border-radius: 0px;
+      transition: all 0.1s ease-in;
+      display: flex;
+      align-items: center;
+    }
+    .College-news:hover{
+        box-shadow: 0px 0px 15px #2059dd;
+    }
+    .nav-resp .nav1-p{
+        background-color: transparent;
+      width: 100%;
+      height: 2.5rem;
+      padding-left: 0.5rem;
+      border-bottom: 1px solid #5f8fff33;
+      border-radius: 0px;
+      margin-top: -0.2rem;
+      display: flex;
+      align-items: center;
+      transition: all 0.1s ease-in;
+    }
+    .nav-resp .nav1-p:hover{
+        box-shadow: 0px 0px 15px #1b58e6;
+    }
+    .nav-resp .nav1-p a{
+        font-size: 0.8rem;
+    }
+    
+.program{
+    margin-top: -5rem;
+}
+/* .program-slider{
+    background-image: url("/image/program-slider.jpg");
+    width: 100%;
+    height: 530px;
+    background-size: 100%;
+    
+    position: relative;
+    top: 0;
+} */
+.program-slider img{
+    width: 100%;
+    height: 450px;
+    filter: brightness(20%);
+    position: relative;
+}
+    
+.slider-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    
+}
+.line{
+    width: 6rem;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 70px;
+    margin: auto;
+    margin-top: -1.5rem;
+}
+
+
+h1{
+    color: #fff;
+    margin-top: 9rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.major-program-para{
+    text-align: center;
+    font-size: 1.2rem;
+   font-family:'Times New Roman', Times, serif;
+    padding: 0 2rem;
+    color: rgba(255, 255, 255, 0.464);
+}
+.course-search{
+    display: flex;
+    justify-content: start;
+    margin: 2rem 0rem;
+    border: 1px solid #3c64c29f;
+    height: 2.8rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.638);
+    box-shadow: 0px 0px 0.5rem black;
+}
+.course-search input{
+    width: 90%;
+    height: 95%;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.638);
+    cursor: pointer;
+    color: rgb(0, 21, 255);
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.course-search input::-webkit-input-placeholder{
+    color: #3256a8;
+    font-size: 1rem;
+
+}
+
+.course-search button{
+    width: 13%;
+    border: none;
+    background-color: #0a42c4;
+    color: white;
+    height: 100%;
+    margin-left: 0.15rem;
+    cursor: pointer;
+}
+.course-search button p{
+    display: none;
+}
+#searchIcon{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+    
+    
+  }
+
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+    border-radius: 1px;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.box{
+    width: 95%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px black;
+}
+.box:hover{
+    box-shadow: 0px 0px 10px black;
+    margin-top: -0.1rem;
+}
+.box .image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 7px solid #0a42c4;
+}
+.box .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.programs-data{
+    padding-left: 0.5rem;
+   padding-right: 0.5rem;
+}
+.programs-data h3{
+    color: #0a42c4;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.programs-data p{
+    font-weight: 400;
+    opacity: 0.8;
+    color: rgb(75, 70, 70);
+    font-size: 0.7rem;
+    line-height: 1.5px;
+}
+.programs-data .btn{
+    width: 100%;
+    height: 2.8rem;
+    background-color: #3256a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    
+}
+.programs-data .btn a{
+   text-decoration: none;
+   color: white;
+}
+.btn:hover{
+    background-color: #0a42c4;
+}
+.programs-data .btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.whats-next{
+    margin-top: -2rem;
+    background-color: white;
+    text-align: center;
+
+}
+.whats-next h2{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0a42c4;
+    margin-top: -2rem;
+}
+.whats-next .next-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.whats-next .next-btns .btn{
+    padding: 0.2rem 5rem;
+    background-color: #0a42c4;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.whats-next .next-btns .btn p{
+    color: white;
+    font-weight: 600;
+}
+#next-btn{
+    background-color: rgb(255, 205, 5);
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.next-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.next-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    background-color: #004cff62;
+    margin-top: -0.3rem;
+}
+
+.footer-section footer{
+    background-color: #3256a8;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: -1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+footer .logo-img{
+    width: 150px;
+    height: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: -1rem;
+    margin-left: 1.5rem;
+}
+footer .logo-img img{
+    width: 100%;
+   
+}
+.address-info{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.address-info a{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.address-info a:hover{
+    color: white;
+}
+ #address{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.employment-info{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.employment-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+   
+}
+.employment-info a:hover{
+    color: white;
+}
+.others-info{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.others-info a{
+    color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+.others-info a:hover{
+    color: white;
+}
+.main-footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #0a42c4;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.main-footer p{
+    color: white;
+}
+.main-footer i{
+    color: white;
+}
+}
